@@ -18,3 +18,10 @@
 | All Source | All Source | All data available on a subject from all of the above disciplines |
 
 ## Intelligence Sources 
+
+- the reality of the commercial space is that intelligence sources are limited (not so much in government)
+- a combination of free and paid intelligences sources tends to be a winning combination in industry
+
+### Open Source Intelligence
+
+- 
