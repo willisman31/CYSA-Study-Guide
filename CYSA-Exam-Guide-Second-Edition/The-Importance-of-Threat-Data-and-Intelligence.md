@@ -24,4 +24,45 @@
 
 ### Open Source Intelligence
 
-- 
+- OSINT must be free and legitimately acquired
+- OSINT helps keep security professionals on the same page as industry trends
+- used to discover threat indicators for specific actors
+- used by pentesters for discovering potential attack vectors or weaknesses
+- OSINT is helpful for malicious actors because it allows them gather intelligence without directly interacting with the target
+  - passive reconnaissance = process of gather intelligence about an entity without interacting with it directly
+
+#### Google
+
+| Operator | Results | Example |
+| -------- | ------- | ------- |
+| site: | limited to specified domain | site:github.com |
+| inurl: | specified contents must exist within url | inurl:/willisman31 |
+| filetype: | results are only of the specified file type | filetype:pdf |
+| intitle: | pages with the indicated text in their tile | intitle:Github |
+| link: | results that contain a link to the indicated url | link:github.com/willisman31 |
+| cache: | results contain only google's latest cached copies of results | cache:github.com/willisman31 |
+
+- further google dorking operators can be found [here](https://hackr.io/blog/google-dorks-cheat-sheet)
+- visiting the google results during recon will leave a trace of your presence
+  - to avoid leaving a trace, use the Google-cached version
+
+#### Internet Registries
+
+- internet registries are needed in order to manage domains and IP addresses and prevent conflicts and overlaps
+
+##### Regional Internet Registries
+
+| Registry | Geographic Region |
+| -------- | ----------------- |
+| AFRINC | Africa and parts of the Indian Ocean |
+| APNIC | Portions of Asia and Oceania |
+| ARIN | Canada, US, parts of North American islands |
+| LACNIC | Latin American, parts of North American islands |
+| RIPE NCC | Europe, Middle East, Central Asia |
+
+- Regional Internet Registries (RIRs) = corporations that control assignment of IPs; each has their own geographic region of responsibility as denoted above
+- RIRs get their authority from the Internet Corporation for Assigned Names and Numbers (ICANN)
+
+##### Domain Name System (DNS)
+
+- DNS = mechanism for assigning domain names to servers
