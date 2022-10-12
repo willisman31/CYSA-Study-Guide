@@ -66,3 +66,72 @@
 ##### Domain Name System (DNS)
 
 - DNS = mechanism for assigning domain names to servers
+- translates (human-readable) domain names into server addresses
+- gain information about live DNS data using the following tools:
+  - nslookup
+  - host
+  - dig
+- DNS harvesting = process of interrogating DNS servers to discover information about a network
+- zone transfer = copying of DNS data across multiple DNS servers
+  - zone transfers are a frequent point of exploitation because they are accepted by default
+  - managed by access control lists (ACLs)
+  - can be initiated by another DNS server or from a client
+- domain registration requires that the registrant provide details about themself (can be individual or organization)
+  - details include the following:
+    - name
+    - phone number
+    - email contact
+    - DNS information
+    - mailing address
+  - these details can be harvested using a tool called WHOIS and are public by default
+    - some registrars (companies/agents who indirectly lease domains from ICANN) provide private registration so that registrant details point to the registrar rather than the end client
+
+#### Job Sites
+
+- job site members provide lots of private information freely
+- harvesting of this information is typically trivial
+  - leads to easy phishing campaigns
+- companies also make themselves vulnerable by using job sites- if a company is looking for a SME or admin with a particular experience, it's likely that the company uses those technologies
+
+#### Social Media
+
+- Reddit and Twitter in particular are useful sources of rapidly updated information about live events
+- social media sites are also useful mediums for gathering target and attacker information based on their public personas
+- social engineering also makes use of social media both as a platform for attack and for targetting specific individuals using personal information mined off these sites
+
+### Proprietary/Closed Source Intelligence
+
+- never rely on a single source in intel gathering
+  - reduces confirmation bias
+  - helps ensure more successful campaigns as intel is more accurate
+- OSINT is often best used to corroborate closed source data
+
+#### Internal Network
+
+- analysis of internal network activity helps establish a baseline for activity
+- internal network data can come from the following sources:
+  - DNS
+  - VPNs
+  - firewalls
+  - authentication logs
+
+#### Classified Data
+
+- make sure that your closed source data is being protected before, during, and after you're done analyzing it
+- classified data in particular requires additional protections beyond the scope of this section
+
+#### Traffic Light Protocol
+
+- Traffic Light Protocol (TLP) = color coded designations for information sharing
+  - created by UK National Infrastructure Security Coordination Center (NISCC)
+  - Not a control scheme, just a guideline
+
+| Color | Usage | Sharing |
+| ----- | ----- | ------- |
+| Red - not for disclosure; for participant use only | use only when information cannot be acted upon by 3rd parties | not for disclosure beyond initial exchange |
+| Amber - limited disclosure within participant org | requires support in order to be acted upon | to be shared only within participant org |
+| Green - limited disclosure within community | useful for spreading awareness within community | share with peers and partner orgs, not with general public |
+| White - unlimited disclosure | little or no risk of damage from release | distributable without restriction |
+
+### Characteristics of Intelligence Source Data
+
