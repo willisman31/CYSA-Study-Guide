@@ -12,4 +12,7 @@
 - Cybersecurity objectives:
     - availability = system is accessible, usable, and/or operational (as applicable) on demand
     - integrity = data has not been changed in any way for any reason without authorization
-    - 
+    - authenticity = confirmation of identity and permission for access
+    - non-repudiation = sender is given proof of delivery, recipient is given proof of sender identity; ensures neither side can deny receipt
+    - confidentiality = data is not disclosed without user authorization
+    - accountability = 
