@@ -133,5 +133,48 @@
 | Green - limited disclosure within community | useful for spreading awareness within community | share with peers and partner orgs, not with general public |
 | White - unlimited disclosure | little or no risk of damage from release | distributable without restriction |
 
-### Characteristics of Intelligence Source Data
+## Characteristics of Intelligence Source Data
 
+- no such thing as comprehensive intelligence source- multiple sources must always be used to supplement and check each other
+- prioritize data that can be used to produce *actionable*, *timely*, *consistent* results
+  - good intel has 3 elements:
+    1. timeliness
+    2. relevance
+    3. accuracy
+  - noise generation and intel failure is inversely proportional to those 3 elements
+- all commercial intelligence sources are too generic to be used alone
+
+### Timeliness
+
+- intelligence that is delivered too late is not actionable
+
+### Relevancy
+
+- prepare threat intel for the appropriate audience
+  - provide details that are most actionable to the parties who will receive the intel
+
+### Accuracy
+
+- obviously anything you're presenting as truth should be maximally accurate
+  - this means keeping assumptions to an absolute minimum if not eliminating them entirely
+
+## Confidence Levels
+
+- intelligence providers use 3 levels of analytic confidence
+- these levels acknowledge incomplete or fragmented information
+- these are human judgements, not objective quantitative measurements
+
+| Level | Description |
+| ----- | ----------- |
+| High | based on high quality info; still possibly incorrect |
+| Moderate | credible source and plausible; not good enough for high confidence |
+| Low | too fragmented or incomplete as basis of solid analytic inferences; may be concerns about source(s) |
+
+## Indicator Management 
+
+- indicator = observable artifact on a network
+  - include both data and context
+
+### Indicator Lifecycle
+
+- 
