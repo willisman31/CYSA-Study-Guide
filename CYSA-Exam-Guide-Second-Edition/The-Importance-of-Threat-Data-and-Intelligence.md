@@ -220,4 +220,72 @@
 
 ##### Intrusion Set
 
+- compilation of a single entity's behaviors/TTPs/properties
+- focus on resources and patterns of behavior rather than identity of the attacker
+- different from campaigns because they are not bound by a set timeframe
+
+##### Malware
+
+- malicious software 
+- type of TTP
+
+##### Observed Data
+
+- any observable artifacts derived from a system or network
+- this is not quite information- it is raw data
+  - information falls short of intelligence
+
+##### Report
+
+- finished intelligence product detailing aspect(s) of a security event
+- may reference other SDOs
+  - ties in relevant details to explain what happened
+
+##### Threat Actor
+
+- individuals/groups behind malicious activities
+- sophistication, PII, motivations can all be tied into this object
+  - understanding goals of a threat actor can help predict their movements
+
+##### Tool
+
+- software used in a campaign
+- tools are NOT malware; may include common software development utilities or systems administration mechanisms
+- can be more difficult to protect against because legitimate users may also use the utility and commercial protection mechanisms may not recognize it as a threat
+
+##### Vulnerability
+
+- software mistake
+  - exploited by attacker for unauthorized access
+- different from malware; may be targetted by malware
+
+#### SROs
+
+##### Relationship
+
+- connection between SDOs
+  - explains how they interact
+- below is an EXAMPLE of some common relationships
+
+| Source SDO | Relationship SRO | Target SDO |
+| ---------- | ---------------- | ---------- |
+| campaign | attributed to | threat actor |
+| malware | targets | identity |
+| attack pattern | uses | malware |
+| course of action | mitigates | vulnerability |
+| indicator | indicates | tool |
+
+##### Sighting
+
+- provides information about an SDO
+- heavy focus on quantitative details: 
+  - last occurrence
+  - first occurence
+  - frequency
+  - number of occurences
+  - where were the occurrences
+- next step up from observed data
+
+#### Trusted Automated Exchange of Indicator Information (TAXII)
+
 - 
