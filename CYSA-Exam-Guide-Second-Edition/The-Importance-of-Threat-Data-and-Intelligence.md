@@ -177,4 +177,47 @@
 
 ### Indicator Lifecycle
 
+- vet the indicator -> decide if indicator is valid
+  - research origin, determine usefulness and reliability
+- sharing threat data can help industry security operations
+
+### Structured Threat Information Expression
+
+- Structured Threat Information Expression (STIX) = MITRE-led effort to communicate threat data in common language
+- STIX 2.0 framework has 12 SDOs (STIX Domain Objects) and 2 SROs (STIX Relationship Objects)
+  - under framework, analysts show relationships between SDOs using SROs
+  - visually representable with JSON
+    - simple structure of data storage allows easy integration into automations
+
+#### SDOs
+
+##### Attack Pattern
+
+- attack patterns are a part of an attacker's TTPs (tactics, techniques, and procedures)
+  - a combination of actions, not just a single event
+- useful for describing types of attacks and *how* they are executed
+
+##### Campaign
+
+- collection of behaviors against a type of target over a set period of time
+- campaign = attacks over a finite period that share the same attacker, victim (or victims), and type of attack
+
+##### Course of Action
+
+- preventative measures or reactions addressing an attack
+- includes both technical and policy implementations
+
+##### Identity
+
+- representation of individuals, organizations, groups
+  - may be entity specific (a person or organization name) or industry- or sector-wide
+- the targets
+
+##### Indicator
+
+- observable data used to detect suspicious activity in an environment (network, system, device, etc.)
+- must be accompanied by context in order to be useful
+
+##### Intrusion Set
+
 - 
