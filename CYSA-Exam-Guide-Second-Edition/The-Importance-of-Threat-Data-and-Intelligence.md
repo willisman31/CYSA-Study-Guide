@@ -288,4 +288,42 @@
 
 #### Trusted Automated Exchange of Indicator Information (TAXII)
 
+- defines how threat data are shared between partners
+- supports STIX data with API design
+- 3 models for sharing:
+  1. hub and spoke -> end users share data with hub by pulling and/or pushing to it
+  2. source/subscriber -> subscribers pull down data from source- data flows outward only
+  3. peer-to-peer -> peers share with each other in network
+- 2 services:
+  1. collections = interface for SDO storage
+  2. channels = pathways for clients to publish data to other clients
+
+#### OpenIOC
+
+- framework created by Mandiant (or FireEye- who knows anymore?) to organize attacker TTP info and other IOCs (Indicators of Compromise)
+- machine-readable format for easy sharing and automation
+- 3 main components:
+  1. IOC metadata = indexing and reference info about IOC; includes author name, IOC name, description
+  2. reference = describe how IOC fits into an environment and sharing guidelines
+  3. description = everything else; the "meat" of the indicator
+
+#### Threat Classification
+
+- incident = any activity that results in some form of harm to the system or increases likelihood of breach of confidentiality
+- identifying incidents starts with establishing a baseline of normal system activity
+- make an incident response plan
+
+##### Known Threats vs. Unknown Threats
+
+- AV software, IPSs, IDSs, etc. use 2 mechanisms for detecting malicious activity
+  1. signature-based = using historical data collected on known threats
+  2. heuristic analysis = observe behavior as it happns and determine from there if the activity is malicious
+    - leverage sandbox environments for testing executables and suspicious files
+- absence of evidence != evidence of absence
+  - just because there is no malicious activity detected does not mean that there is none
+  - reduce assumptions to improve accuracy
+    - one option is to treat everything as untrusted
+
+##### Zero Day
+
 - 
