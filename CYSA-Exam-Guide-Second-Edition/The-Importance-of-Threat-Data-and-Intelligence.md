@@ -181,7 +181,7 @@
   - research origin, determine usefulness and reliability
 - sharing threat data can help industry security operations
 
-### Structured Threat Information Expression
+## Structured Threat Information Expression
 
 - Structured Threat Information Expression (STIX) = MITRE-led effort to communicate threat data in common language
 - STIX 2.0 framework has 12 SDOs (STIX Domain Objects) and 2 SROs (STIX Relationship Objects)
@@ -189,79 +189,79 @@
   - visually representable with JSON
     - simple structure of data storage allows easy integration into automations
 
-#### SDOs
+### SDOs
 
-##### Attack Pattern
+#### Attack Pattern
 
 - attack patterns are a part of an attacker's TTPs (tactics, techniques, and procedures)
   - a combination of actions, not just a single event
 - useful for describing types of attacks and *how* they are executed
 
-##### Campaign
+#### Campaign
 
 - collection of behaviors against a type of target over a set period of time
 - campaign = attacks over a finite period that share the same attacker, victim (or victims), and type of attack
 
-##### Course of Action
+#### Course of Action
 
 - preventative measures or reactions addressing an attack
 - includes both technical and policy implementations
 
-##### Identity
+#### Identity
 
 - representation of individuals, organizations, groups
   - may be entity specific (a person or organization name) or industry- or sector-wide
 - the targets
 
-##### Indicator
+#### Indicator
 
 - observable data used to detect suspicious activity in an environment (network, system, device, etc.)
 - must be accompanied by context in order to be useful
 
-##### Intrusion Set
+#### Intrusion Set
 
 - compilation of a single entity's behaviors/TTPs/properties
 - focus on resources and patterns of behavior rather than identity of the attacker
 - different from campaigns because they are not bound by a set timeframe
 
-##### Malware
+#### Malware
 
 - malicious software 
 - type of TTP
 
-##### Observed Data
+#### Observed Data
 
 - any observable artifacts derived from a system or network
 - this is not quite information- it is raw data
   - information falls short of intelligence
 
-##### Report
+#### Report
 
 - finished intelligence product detailing aspect(s) of a security event
 - may reference other SDOs
   - ties in relevant details to explain what happened
 
-##### Threat Actor
+#### Threat Actor
 
 - individuals/groups behind malicious activities
 - sophistication, PII, motivations can all be tied into this object
   - understanding goals of a threat actor can help predict their movements
 
-##### Tool
+#### Tool
 
 - software used in a campaign
 - tools are NOT malware; may include common software development utilities or systems administration mechanisms
 - can be more difficult to protect against because legitimate users may also use the utility and commercial protection mechanisms may not recognize it as a threat
 
-##### Vulnerability
+#### Vulnerability
 
 - software mistake
   - exploited by attacker for unauthorized access
 - different from malware; may be targetted by malware
 
-#### SROs
+### SROs
 
-##### Relationship
+#### Relationship
 
 - connection between SDOs
   - explains how they interact
@@ -275,7 +275,7 @@
 | course of action | mitigates | vulnerability |
 | indicator | indicates | tool |
 
-##### Sighting
+#### Sighting
 
 - provides information about an SDO
 - heavy focus on quantitative details: 
@@ -286,7 +286,7 @@
   - where were the occurrences
 - next step up from observed data
 
-#### Trusted Automated Exchange of Indicator Information (TAXII)
+### Trusted Automated Exchange of Indicator Information (TAXII)
 
 - defines how threat data are shared between partners
 - supports STIX data with API design
@@ -298,7 +298,7 @@
   1. collections = interface for SDO storage
   2. channels = pathways for clients to publish data to other clients
 
-#### OpenIOC
+### OpenIOC
 
 - framework created by Mandiant (or FireEye- who knows anymore?) to organize attacker TTP info and other IOCs (Indicators of Compromise)
 - machine-readable format for easy sharing and automation
@@ -307,13 +307,13 @@
   2. reference = describe how IOC fits into an environment and sharing guidelines
   3. description = everything else; the "meat" of the indicator
 
-#### Threat Classification
+## Threat Classification
 
 - incident = any activity that results in some form of harm to the system or increases likelihood of breach of confidentiality
 - identifying incidents starts with establishing a baseline of normal system activity
 - make an incident response plan
 
-##### Known Threats vs. Unknown Threats
+### Known Threats vs. Unknown Threats
 
 - AV software, IPSs, IDSs, etc. use 2 mechanisms for detecting malicious activity
   1. signature-based = using historical data collected on known threats
@@ -324,6 +324,149 @@
   - reduce assumptions to improve accuracy
     - one option is to treat everything as untrusted
 
-##### Zero Day
+#### Zero Day
 
-- 
+- zero day vulnerability = software flaw unknown to the developer
+- zero day exploit = code written to take advantage of zero day vulnerability
+
+##### The Emergence of the Exploit Marketplace
+
+- recent increase in zero day exploits
+- due to their value, zero day exploits are sold in black markets to criminal groups that can profit from leveraging them
+  - bug bounty programs are the other side of the same coin- software development companies pay distributed markets for first crack at their own zero days so they can be resolved before criminal exploitation
+
+##### Preparation
+
+- no single solution can protect anyone or anything completely
+  - layer defenses and prevent single points of failure
+- even with an incident response plan, organizations should have proactive operations to deal with security threats
+  - info sources on software bugs:
+    - SANS Internet Storm Center
+    - CERT Coordination Center at Carnegie Mellon
+
+#### Advanced Persistent Threat (APT)
+
+- APT = stealthy continuous, usually coordinated, hacking effort
+  - usually orchestrated by a government or organization with extensive resources
+- goal is to maintain long term access to target systems while evading detection
+
+##### Advanced
+
+- well-equiped, well-trained, well-funded; APTs coordinate many sources of information to gather intelligence on a target
+
+##### Persistent
+
+- individual operators have a good understanding of their role in a campaign or hacking effort and can pinpoint weak spots through long-term engagement
+
+##### Threat
+
+- APT campaigns serve a larger purpose than a single cyber event in a bubble- there is a broader goal in mind and an attack represents just one step in achieving that goal
+- because APTs are by definition advanced, successful organizations will very often share information about them so that they can be combatted on a bigger scale
+
+## Threat Actors
+
+- threat actors are a diverse bunch in terms of sophistication, resources, and intent among other things
+
+### Nation-State Threat Actors
+
+- these are the most sophisticated threats because of the resources, manpower, training, and support that can be provided to offensive programs
+- with huge budgets, they can buy or develop their own zero days with great frequency
+- may involve private businesses as contractors
+- may incorporate false flags into their campaigns to avoid be identified by defenders
+- simple intelligence operations for one nation may appear to another as a threat actor
+
+### Hactivists
+
+- attackers with a specific cause or purpose they are supporting outside of the government space
+- typically reliant on large participation in order to be effective
+- little (if any) emphasis on stealth or monetary incentives
+- commonly attack availability of a system
+
+### Organized Crime
+
+- driven by monetary incentives
+  - selling intellectual property
+  - ransoming assets
+  - stealing compute for crypto-mining
+- generally low-risk operations with high return on investment
+- growth of cryptocurrencies have allowed money to be moved more easily
+
+### Insider Threat Actors
+
+- threat actors that work from within an organization (pretty self-explanatory)
+- traditional security perimeters are ineffective
+- solutions to combat them must be multi-dimensional and layered
+
+#### Intentional
+
+- organization members with privileged access of some sort who wish to use their access for money or revenge
+- combat with role based access control
+  - monitor anomalous network activity
+  - remove employee access upon termination
+
+#### Unintentional
+
+- human error or negligence can make people unwitting threat actors
+- mistakes happen, good controls can limit the damage done
+
+## Intelligence Cycle
+
+- 5-or 6-step method for converting raw data into actionable intelligence
+- cycle is continuous and can progress without total completion of the previous step
+
+### Requirements
+
+- question identification, prioritization, and refinement
+- planning and direction as needed
+
+### Collection
+
+- data is collected to fill gaps in intelligence
+- setting up data sources inside and outside of the system 
+
+### Analysis
+
+- making sense of collected data
+  - utilize automation, trained professionals, or other means of data processing
+- output of this phase is actionable intelligence
+
+### Dissemination
+
+- distributing of requested intelligence
+- requesters can then utilize the processed intelligence as demanded by their organizational goals
+
+### Feedback
+
+- each phase includes a refinement; feedback phase is a dedicated part of the cycle when the team can reformulate their processes to improve
+- self-appraisal as well as appraisal by client (whomever requested the intelligence)
+
+## Commodity Malware
+
+- pervasive malware made available for sale to other threat actors
+- horizontal integration is about as common in organized crime as it is in modern business- just because a group can build malware doesn't also mean that they're optimized to profit from its delivery
+
+### Malware-as-a-Service
+
+- malware built to order
+  - may include customer support, regular updates, bug fixes (Windows = malware /s)
+  - often cloud-hosted to offer better service to buyers
+
+## Information Sharing and Analysis Communities
+
+- different industries have dedicated security-specialized communities for sharing information
+- ISAC = information sharing and analysis community
+- some examples are included below:
+
+| Industry | Name |
+| ----------- | ---- |
+| Automotive | Auto-ISAC |
+| Aviation | A-ISAC |
+| Communications | NCC |
+| Electricity | E-ISAC |
+| Elections Infrastructure | EI-ISAC |
+| Financial Services | FS-ISAC |
+| Health | H-ISAC |
+| Information Technology | IT-ISAC |
+| MultiState | MS-ISAC |
+
+- ISAOs (Information Sharing and Analysis Organizations) = public organizations for sharing security information not specific to a given industry
