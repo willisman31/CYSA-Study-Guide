@@ -87,8 +87,9 @@
 
 - developed in 2011 as whitepaper by security team members
 - consists of 7 steps:
-  1. Reconnaissance
-  2. Weaponization
+  1. Reconnaissance - gather as much information as possible on the target; may be either passive or active
+    - defenders need to know what information about their org is available and how it can be leveraged against them
+  2. Weaponization - 
   3. Delivery
   4. Exploitation
   5. Installation
