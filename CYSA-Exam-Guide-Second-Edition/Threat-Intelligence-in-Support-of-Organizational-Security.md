@@ -86,12 +86,27 @@
 #### Lockheed Martin Cyber Kill Chain
 
 - developed in 2011 as whitepaper by security team members
+- help defenders build layers of security to thwart attacks at any stage
+- loose map, not a definitive blueprint of attack chains
 - consists of 7 steps:
   1. Reconnaissance - gather as much information as possible on the target; may be either passive or active
     - defenders need to know what information about their org is available and how it can be leveraged against them
-  2. Weaponization - 
-  3. Delivery
-  4. Exploitation
-  5. Installation
-  6. Command and Control (C2)
-  7. Actions on Objectives
+  2. Weaponization - transformation of information gathered in reconnaissance into attacks
+    - hard for defenders to intervene because this stage occurs almost entirely on the attacker side
+    - best hope is usually to try to extrapolate possible attacks from data that could have been exposed
+  3. Delivery - transmission of weaponized attack; phishing emails, MITM attacks, tainted USB injection are examples of delivery mechanisms
+    - combination of technical controls and policies help prevent successful attack delivery
+  4. Exploitation - leveraging of the delivered payload by the attacker; includes *execution* of payload
+    - least privilege and patching known vulnerabilities are often successful at limiting impact
+  5. Installation - placement of backdoor or agent to allow persistence for the attacker
+    - endpoint detection/monitoring programs help protect against known mechanisms for persistent access
+  6. Command and Control (C2) - attacker creates a channel to access system remotely in perpetuity
+    - C2 agents have a common traffic pattern which makes it possible to determine when they're present on a network; while they may try to encrypt their way around inspection, defenders who know what's going on within their network should be able to find see this traffic quickly
+      - common channels are DNS, HTTP, and email
+  7. Actions on Objectives - the reason the defender bought the ticket in the first place: accomplishing their goal
+    - data loss prevention software may be successful against some attackers
+    - redundant and TESTED backups can help recovery
+
+## Threat Research
+
+- 
