@@ -109,4 +109,44 @@
 
 ## Threat Research
 
-- 
+- growing field as security frameworks, teams, and practices mature
+- ask questions, answer them, rinse and repeat
+
+### Reputational
+
+- malware signatures and IP and domain reputations help defenders filter high risk traffic from their network
+  - information is leveraged with firewalls, gateways, intrusion detection systems (IDSs), among others
+- reputation of URLs, domains, and IPs can be established with free and commercial services
+  - higher scores are associated with higher rates of security incidents
+  - Google offers a basic version of this service, notifying users before they access sites that are suspected of being controlled by malicious actors
+    - Google subsidiary, VirusTotal, offers reliable results on URLs and file hashes and comes with a nifty API
+  - Cisco's Talos team proivdes a reputation center with lookup capabilities
+
+### Behavioral
+
+- just observing what an artifact does rather than trying to reverse engineer it 
+- done using isolated environments or sandboxes
+  - Cuckoo Sandbox = common open source sandbox tool
+  - REMnux = Linux distro for malware reverse engineering
+  - may be a pointless exercise if the malware has been engineered to change its behavior when it detects it's in a sandbox
+
+### Indicator of Compromise
+
+- IoC = artifact which shows possibility of attack or compromise; 2 components:
+  1. data
+  2. context
+- Pyramid of Pain (shown below), created by David Bianco to categorize IoCs, the higher in the pyramid defenders attack the IoCs the more difficult it is for attackers to overcome
+
+![Bianco's Pyramid of Pain](../_assets/BiancosPyramidOfPain.png "Bianco's Pyramid of Pain")
+
+### Common Vulnerability Scoring System (CVSS)
+
+- framework used to standardize the severity of a given vulerability
+- de facto standard (likely to appear on exam)
+- 3 metric groups:
+  1. base = characteristics that remain constant over time
+  2. temporal = characteristics that change with time
+  3. environmental = characteristics unique to a user's environment
+
+## Threat Modeling Methodologies
+
