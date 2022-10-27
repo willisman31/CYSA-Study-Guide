@@ -150,3 +150,12 @@
 
 ## Threat Modeling Methodologies
 
+- procedural approach to thinking like the attacker
+- create various prototypes of possible attackers and try to find weak points they may exploit
+- the goal shapes the approach, some models may seek holistic improvements, others may target very specific points in the system
+- threat models should be an input in the earliest stage of SDLC (Systems Development Lifecycle)
+  - ensures greater emphasis on potential threats
+  - greatest influence on system architecture
+
+### Adversary Capability
+
