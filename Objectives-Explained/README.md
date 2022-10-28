@@ -1,0 +1,3 @@
+# Exam Objectives Explained
+
+In this directory are all of my notes on each exam objective publicly listed on the CompTIA website for the CS0-003 beta exam.  I have tried to balance my explanations to provide clarity and depth while at the same time avoiding details that would be superfluous to this particular exam; in keeping with this, I have included additional resources with my notes in case you have questions I have not answered.

@@ -159,3 +159,58 @@
 
 ### Adversary Capability
 
+- understand what a potential attacker can do to you
+- who's attacking, why, how 
+
+### Total Attack Surface
+
+- logical and physical space that can be targeted by attacker
+- mapping is an important step towards understanding exposed surface
+- analysis of attack surface is done by other security professionals
+  - analysts are more concerned about how architecture can be changed to accomodate this
+
+### Attack Vector
+
+- find the most likely path to the jewels
+  - done with red teaming, tabletop exercises, visualization
+- cut out the paths in as many places as possible
+
+### Impact
+
+- potential damage arising from a single security incident
+  - mechanism for communicating risk
+
+### Likelihood
+
+- chance of successful exploitation of a vulnerability
+
+### STRIDE
+
+- threat modeling framework with 6 categories invented in 1999 by Microsoft
+
+| Threat | Property | Definition |
+| ------ | -------- | ---------- |
+| Spoofing | Authentication | impersonation of an entity |
+| Tampering | Integrity | improperly modifying data |
+| Repudiation | Nonrepudiation | claiming not to have performed an action nor knowing who did |
+| Information Disclosure | Confidentiality | exposing data to unauthorized parties |
+| Denial of Service | Availability | denying or degrading service or other resources to legitimate users |
+| Elevation of Privilege | Authorization | improperly gaining capabilities |
+
+### PASTA
+
+- Process for Attack Simulation and Threat Analysis (PASTA) = risk-focused threat modeling framework
+- aims to align technical requirements with business goals
+
+| Stage | Key Tasks |
+| ----- | --------- |
+| Define Objectives | identify business objectives and security requirements; perform business impact analysis |
+| Define Technical Scope | record infrastructure, application, and software dependencies and technical environment scope |
+| Application Decomposition | identify use cases, actors, assets, services, roles, and data sources; create data flow diagrams |
+| Threat Analysis | Analyze attack scenarios; perform threat intel correlation, analytics |
+| Vulnerability and Weaknesses Analysis | catalog vulnerability reports; map known vulnerabilities; perform design flaw analysis |
+| Attack Modeling | analyze complete attack surface |
+| Risk and Impact Analysis | qualify and quantify business impact; catalog mitigations; identify residual risk |
+
+## Threat Intelligence Sharing with Supported Functions
+
