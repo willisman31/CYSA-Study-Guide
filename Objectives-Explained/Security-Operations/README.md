@@ -13,6 +13,9 @@ This section has the heaviest weight of all the exam domains at 33%.
     - [File Structure](./OS-Concepts/File-Structure.md)
     - [System Processes](./OS-Concepts/System-Processes.md)
     - [Hardware Architecture](./OS-Concepts/Hardware-Architecture.md)
-- [Infrastructure Concepts]()
+- [Infrastructure Concepts](./Infrastructure-Concepts/)
+    - [Serverless](./Infrastructure-Concepts/Serverless.md)
+    - [Virtualization](./Infrastructure-Concepts/Virtualization.md)
+    - [Containerization](./Infrastructure-Concepts/Containerization.md)
 
 ## 1.2 Given a scenario, analyze indicators of potentially malicious activity.

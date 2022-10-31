@@ -214,3 +214,45 @@
 
 ## Threat Intelligence Sharing with Supported Functions
 
+### Incident Response
+
+- incident response is a position for more experienced security professionals due to wide breadth of knowledge needed for functions
+- speed is a necessity for a successful program
+  - playbooks and automated responses are gaining popularity as a result
+- repeatable, scalable, reliable processes are the goal
+
+### Vulnerability Management
+
+- every system has vulnerabilities, dilligence is needed to identify these vulnerabilities and patch them
+- NIST's National Vulnerability Database (NVD) lists all vulnerabilities known to NIST (though admittedly later than they are known to the general public), in an attempt to make it easy for defenders to know if they have active vulnerabilities in their environments
+- threat intelligence adds an operational context to these vulnerabilities, answering whether these vulnerabilities are actively being exploited by attackers
+- it's not about what can be exploited, it's about what is likely to be exploited; totally impenetrable security is virtually impossible, so the goal is to prioritize the easiest and likeliest paths to exploitation and block them
+- some free sources for intelligence related vulnerabilities are listed below:
+
+| Type | Description |
+| ---- | ----------- |
+| Information Security Sites | Vendor blogs and disclosres |
+| Social media | Twitter is a great location to pick up news on the latest vulnerabilities, exploits, and attack patterns |
+| Code repos | GitHub has lots of PoCs |
+| Paste sites | Pastebin, Ghostbin, and others often host lists of exploits |
+
+### Risk Management
+
+- risk is understood in terms of impact and probability
+- threats are described with the following:
+  - capability
+  - intent
+  - opportunity
+- risk management teams try to predict the future
+  - threat intelligence is a tool they use to *attempt* to do this
+- again, prioritization is the name of the game; here, it's about assets
+
+### Security Engineering
+
+- threat intelligence offers insight into the effectiveness of security implementations within an organization
+- TI feedback can be analyzed and acted upon engineers to build better systems
+
+### Detection and Monitoring
+
+- threat intelligence helps teams make better decisions because they have the context needed to understand what's going on outside of their immediate environment that could impact them; this insight helps teams know what to look for on their systems and networks
+- it's about seeing the forest for the trees
