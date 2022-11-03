@@ -17,5 +17,13 @@ This section has the heaviest weight of all the exam domains at 33%.
     - [Serverless](./Infrastructure-Concepts/Serverless.md)
     - [Virtualization](./Infrastructure-Concepts/Virtualization.md)
     - [Containerization](./Infrastructure-Concepts/Containerization.md)
+- [Network Architecture](./Network-Architecture/)
+    - [On-premises](./Network-Architecture/On-Premises.md)
+    - [Cloud](./Network-Architecture/Cloud.md)
+    - [Hybrid](./Network-Architecture/Hybrid.md)
+    - [Network Segmentation](./Network-Architecture/Network-Segmentation.md)
+    - [Zero Trust](./Network-Architecture/Zero-Trust.md)
+    - [Secure Access Secure Edge (SASE)](./Network-Architecture/Secure-Access-Secure-Edge.md)
+    - [Software-Defined Networking (SDN)](./Network-Architecture/Software-Defined-Network.md)
 
 ## 1.2 Given a scenario, analyze indicators of potentially malicious activity.
