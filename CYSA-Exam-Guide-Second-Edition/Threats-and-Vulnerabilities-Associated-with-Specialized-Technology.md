@@ -32,4 +32,20 @@
 
 ## Mobile Devices
 
+- given their uniquely privileged access to private data, they are a lucrative target for attackers
+- mobile devices are much more susceptible to physical theft than other computing mediums
+    - "physical access is total access" - it's much harder to protect data when it's literally in the hands of attackers
+- three categories of mobile vulnerabilities:
+
+### Network Vulnerabilities
+
+- 2 network entries:
+    - attacks from poorly configured/built mobile networks
+    - attacks on the mobile device's mobile interface
+- when the network infrastructure itself is exploited, everyone who uses it is vulnerable
+    - this is especially problematic when threat actors have government-level control over these networks
+- attacks on mobile interfaces are rare, but high impact events
+
+### Device Vulnerabilities
+
 - 
