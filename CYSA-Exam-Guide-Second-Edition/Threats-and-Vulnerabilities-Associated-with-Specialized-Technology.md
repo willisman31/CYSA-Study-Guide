@@ -48,4 +48,10 @@
 
 ### Device Vulnerabilities
 
+- vulnerabilities to a physical device can be absolutely devastating because the only remediation is to get a new device
+    - a really cool example of this is the rowhammer attack
+        - this attack is based on how dynamic RAM (DRAM) is accessed in modern computers where a small electrical signal changes leaks to nearby cells in memory whenever a certain cell is accessed.  In theory, this can be leveraged into privilege escalation by creating a large enough electrical charge to change specific memory addresses.  Realistically, it's basically impossible in any practical setting, but it does show that virtually all hardware is susceptible to attack
+
+### Operating System Vulnerabilities 
+
 - 
