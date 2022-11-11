@@ -54,4 +54,11 @@
 
 ### Operating System Vulnerabilities 
 
+- developers aim to limit time between patch release and installation; attackers want the reverse so they maximize the time that an exploit is viable
+    - window of vulnerability = time between vulnerability discovery and patch installation
+- Android devices tend to have larger windows of vulnerability because of the need to coordinate across multiple vendors
+    - iOS doesn't have this problem because of its centralization
+
+### App Vulnerabilities
+
 - 
