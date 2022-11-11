@@ -61,4 +61,46 @@
 
 ### App Vulnerabilities
 
+- quick software development cycles tend to cause more vulnerabilities
+- later sections will cover this more deeply
+
+### Improper Platform Usage
+
+- it is not unusual for developers to take shortcuts in app development that cause vulnerabilities
+- when developers make mistakes, whether from misunderstanding or laziness, it can lead to vulnerabilities
+
+### Insecure Data Storage
+
+- privacy and security are risked when data is not handled carefully
+- data at rest and in motion must be protected; common problems include:
+    - world readable files
+    - improper logging
+    - secretly generated analytics
+
+### Insecure Authentication
+
+- local authentication means locally stored passwords
+    - when passwords are stored locally, they are outside of the control (and protection) of an app/platform/software developer
+- insufficient password policies increase the likelihood of exploitation
+
+### Insecure Authorization
+
+- inaccurate permissions for resources to which any user or role should have access
+- order of authentication is also important- if an API call can be completed before authentication, it's also an authorization issue
+
+### Code Quality Vulnerabilities
+
+- code reuse means potentially reusing old mistakes and vulnerabilities
+- increased dependence on third party libraries means that attackers just need to poison one pool to affect many apps
+- code review with SMEs is an effective step to ensure code quality
+- code should not be able to run if it has been manipulated after deployment
+    - prevents injections
+
+#### Messaging Platforms
+
+- example of RCE from WhatsApp 2019
+- app vulnerability could be leveraged to attack the entire device
+
+## Internet of Things
+
 - 
