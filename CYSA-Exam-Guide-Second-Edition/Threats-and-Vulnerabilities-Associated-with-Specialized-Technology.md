@@ -103,4 +103,31 @@
 
 ## Internet of Things
 
+- IoT devices are generally non-traditional computing devices; in enterprise settings, they (theoretically) make processes more efficient
+- common enterprise IoT devices include:
+    - CCTV cameras
+    - smart thermostats and lighting devices
+    - printers
+- provide visibility into status of assets, but also increase attack surface
+- patches are tough to install on these devices, but are still important for security
+- default passwords should be changed before the devices are put into use
+
+### The Mirai Botnet
+
+- botnet that targets IoT devices for DDoS attacks
+- in 2016 it took down a bunch of popular websites
+- creating strong passwords and closing unused ports are really effective protections
+
+### Medical Devices
+
+- PoCs have been developed to act on medical IoT devices, but none have been found in the wild
+- despite the fact that none have been exploited, they should still be strongly protected
+
+## Embedded Systems
+
+- these systems are run by firmware or hardwired instructions
+- since the code that they run is so deeply engrained in them, it is very hard to remediate vulnerabilities and monitor their activity centrally
+
+### Real-Time Operating Systems
+
 - 
