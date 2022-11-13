@@ -130,4 +130,87 @@
 
 ### Real-Time Operating Systems
 
-- 
+- a RTOS is used for low-latency output for input
+- used in vehicles, manufacturing equipment, aircraft
+- used heavily for optimizing task scheduling
+
+### System on a Chip
+
+- combination of software and hardware in a single integrated circuit and processor
+- hardware verifications must be performed as well as software verfications
+    - hardware and software are tightly coupled
+
+### Field Programmable Gate Array
+
+- programmable chips for a variety of specialized functions
+- processes are defined using hardware description language (HDL) which may be a target for attack
+
+## Physical Access Control
+
+- combination of hardware and logical artifacts to authenticate a user based on credentials
+- RFID badges and card readers are very common for this
+- when physical access is controlled by only one protection, it is usually possible to overcome
+    - if a door is controlled by a badging scheme, the badge may be forged, the reader may be hacked, or, depending on implementation, the attacker may simply remove the reader and open the door by immitating the electical pulse sent by the reader to signify a successful read
+- spoofing by replay or cloning is a common attack
+    - replays are done by repeating an authentic packet or communication to receive the same access
+    - cloning is done by copying some information or artifact to emulate its functionality
+
+## Connected Vehicles
+
+- connected vehicles add new vulnerabilities besides the traditional hardware problems
+- detection and remediation is very difficult
+
+### CAN Bus
+
+- CAN Bus = controller area network; defines control of systems by vehicle components usually with ECUs (electronic control units)
+- has no ingrained security
+- highly susceptible to MITM attacks
+
+### Drones
+
+- remote control of drones is susceptible to attack
+- drones can be used for cheap surveillance or denial of service attacks on physical aviation
+
+#### Hardware Security
+
+- hardware components for drones can be easily swapped out with those from an attacker
+- secure storage is important for preventing attacks on hardware
+
+#### Communications Channels Security
+
+- drones that communicate over networks have the same vulnerabilities as those networks
+- direct and encrypted communication can help prevent this
+
+#### Web Portal Security
+
+- the portals used to take control of drones via a web app are also a potential attack vector
+
+## Industrial Control Systems
+
+- cyber systems which control physical behaviors
+![ICS Example](../_assets/ICS-example.jpg "Example of ICS infrastructure")
+- heavily reliant on firmware
+- updates and patches are super difficult to deploy, they typically cannot be centralized or automated and require downtime
+- default passwords are difficult to change and are publicized by the vendor
+
+### Vulnerabilities in Interconnected Networks
+
+- every endpoint on a network is a potential entry point for attackers, limit your endpoints and segment your networks
+
+## SCADA Devices
+
+- SCADA = Supervisory Control and Data Acquisition system; type of ICS used for controlling and monitoring widely distributed (by area) devices 
+- used for transmissions and pipelines
+- historically reliant on obscurity for security
+- reliance on remote stations for transmissions
+
+### Modbus
+
+- prioritizes functionality over security in communications 
+- de facto standard for communicating between PLCs
+- easy to intercept, replay, and forge packets
+
+## Process Automation Systems
+
+- PAS = workflow automation system (WAS); automate day-to-day business processes
+- when complex processes or those with edge cases are automated, the possibility for exploitation is high
