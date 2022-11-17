@@ -11,4 +11,9 @@
 
 ### Shared Responsibility Model
 
+- describes which party is responsible for which aspects of security within the cloud
+- different cloud services and CSPs (Cloud Service Providers) offer different levels of security
+
+### Software as a Service
+
 - 
