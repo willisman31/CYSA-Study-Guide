@@ -16,4 +16,20 @@
 
 ### Software as a Service
 
+- most common software delivery method
+- users are responsible for data protection, vendor covers the rest
+![SaaS Technology Stack](../_assets/SaaS-Model.jpg "SaaS Technology Stack Areas of Responsibility")
+- three common types of vulnerabilities which affect SaaS products are the following:
+    1. visibility - organizations need to know where their data is going in order to manage it 
+    2. management - IAM; who gets to see what data and when
+    3. data flow - know where the data goes, once it's out it's gone
+- define the boundaries of where data is supposed to and allowed to go
+
+#### Security as a Service (SECaaS)
+
+- security services offered like SaaS cloud model
+- similar to MSSPs
+
+### Platform as a Service
+
 - 
