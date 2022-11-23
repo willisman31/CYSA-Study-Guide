@@ -32,4 +32,11 @@
 
 ### Platform as a Service
 
+- build your own coded application using our environment
+![PaaS Technology Stack](../_assets/PaaS-Model.jpg "PaaS Technology Stack Areas of Responsibility")
+- you need to build secure applications and trust that your cloud vendor has good processes in place to protect their areas of responsibility
+
+### Infrastructure as a Service
+
 - 
+
