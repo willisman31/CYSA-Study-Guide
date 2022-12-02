@@ -38,5 +38,11 @@
 
 ### Infrastructure as a Service
 
+- a step further down the ladder and closer to the metal in terms of how much the customer controls
+![IaaS Technology Stack](../_assets/IaaS-Model.jpg "IaaS Technology Stack Areas of Responsibility")
+- the closer you get to the bottom of the stack, the more control you have and the more vulnerabilities you have to manage yourself
+
+## Cloud Deployment Models
+
 - 
 
