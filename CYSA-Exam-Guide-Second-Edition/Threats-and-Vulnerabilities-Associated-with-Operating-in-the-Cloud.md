@@ -44,5 +44,29 @@
 
 ## Cloud Deployment Models
 
-- 
+- choose a model that fits your risk appetite, goals, and assets
+
+### Public
+
+- you share infrastructure/computing resources with public organizations (Microsoft, Google, Amazon, etc.)
+
+### Private
+
+- the same organization owns all the infrastructure being used
+- common in very big organizations that have sensitive data (government contractors, banks, large manufacturers will often have private clouds to share between internal projects)
+
+### Community
+
+- infrastructure is shared across a select few organizations
+- often built for orgs operating in the same environment
+	- ex. Azure's Government Community Cloud (GCC)
+
+### Hybrid
+
+- combination of private and public cloud models
+- common for banks, who will often have services open to the public and lots of data that they want to control entirely
+
+## Serverless Architecture
+
+
 
